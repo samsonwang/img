@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>404, Sorry, Page not found.</h2>
+    <h3>Redirecting to <a href="http://blog.wangzhl.com">blog.wangzhl.com</a> in <span id="countdown">3</span> seconds.</h3>
+  </body>
+  <!-- JavaScript part -->
+  <script type="text/javascript">
+    var seconds = 4;
+    function countdown() {
+      seconds = seconds - 1;
+      if (seconds < 0) {
+        window.location = "http://blog.wangzhl.com";
+      }
+      else {
+        document.getElementById("countdown").innerHTML = seconds;
+        window.setTimeout("countdown()", 1000);
+      }
+    }
+    countdown();
+  </script>
+</html>
