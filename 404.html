@@ -10,7 +10,8 @@
     function countdown() {
       seconds = seconds - 1;
       if (seconds < 0) {
-        window.location = "http://blog.wangzhl.com";
+        window.location.replace("http://blog.wangzhl.com");
+        // window.location.href = "http://blog.wangzhl.com";
       }
       else {
         document.getElementById("countdown").innerHTML = seconds;
